@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio Visualiser</title>
+    <link rel="icon" href="https://img.icons8.com/?size=96&id=80420&format=png">
+    <style>
+      canvas {
+        width: 100%;
+        height: 95%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+      body{
+        background-image: url(https://cdn.dribbble.com/users/1036808/screenshots/7385069/media/aad192da74d690845d05eac18c5cadae.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<label for="audio"><h1>Select the Song</h1></label><br>-->
+    <input type="file" accept="audio/*" id="audio" style="display: inline-block;">
+    <h1 style="color: chartreuse; text-align: center;">Audio Visualiser</h1>
+
+    <label for="audio"><h1 style="color: white;">Select the song you want to play</h1></label>
+    <canvas id="canvas"></canvas>
+
+    <script src="index.js"></script>
+  </body>
+</html>
